@@ -26,7 +26,7 @@ Connectez les 5 fils de la manière suivante :
 
 <p align="center"> <img src="/Media/like_counter_wire.png" alt="like counter wire"></p>
 <p align="justify">Si vous disposez d’une imprimante 3D, vous pouvez télécharger le fichier d’impression 3D afin de fabriquer le boîtier. Visser l’écran ainsi que le LinkNode D1 de la manière suivante :</p>
-<p align="center"> <img src="/Media/IMG_20181217.jpg" alt="like counter wire"></p>
+<p align="center"> <img src="/Media/IMG_20181217.jpg" height="75%" width="75%" alt="like counter wire"></p>
 
 ### Le code :computer:
 ***
