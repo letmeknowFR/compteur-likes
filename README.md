@@ -41,28 +41,28 @@ Connectez les 5 fils de la manière suivante :
 ***
 <ol><li>Pour lier votre compte Facebook, vous devez vous rendre sur l'<a href="https://developers.facebook.com/?locale=fr_FR">API Facebook</a> et vous identifier. (Afin de pouvoir afficher le nombre de likes sur votre page vous devez en être administrateur).</li>
 	<li>Sélectionnez "Mes applications" → "Ajouter une application", nommez votre application et faites "Créer un ID d'app".</li>
-	<li>Sélectionnez "Outils" → "Explorateur de l'API Graph", puis récupérez le token d'accès (Ctrl+C).</li><figure class="wp-block-image"><img src="/Media/Capture5.png" alt="" class="wp-image-1883"/></figure>
-	<li>Toujours dans “Outils”, sélectionnez “Outils de débug de tokens d’accès”, coller (Ctrl+v) le dans la barre associée, puis cliquez sur “Débuguer“. Des informations sur le token d’accès devrait s’afficher dont sa durée d’expiration. Par défaut il expire au bout d’une heure, pour éviter cela cliquez sur “étendre le token d’accès”. Un nouveau token d’accès vous est donné, copiez le.</li><figure class="wp-block-image"><img src="/Media/Capture6.png" alt="" class="wp-image-1884"/></figure>
+	<li>Sélectionnez "Outils" → "Explorateur de l'API Graph", puis récupérez le token d'accès (Ctrl+C).</li><figure class="wp-block-image"><img src="/Media/Capture5.PNG" alt="" class="wp-image-1883"/></figure>
+	<li>Toujours dans “Outils”, sélectionnez “Outils de débug de tokens d’accès”, coller (Ctrl+v) le dans la barre associée, puis cliquez sur “Débuguer“. Des informations sur le token d’accès devrait s’afficher dont sa durée d’expiration. Par défaut il expire au bout d’une heure, pour éviter cela cliquez sur “étendre le token d’accès”. Un nouveau token d’accès vous est donné, copiez le.</li><figure class="wp-block-image"><img src="/Media/Capture6.PNG" alt="" class="wp-image-1884"/></figure>
 	<li>Afin de récupérer l’ID de votre page, copiez l’url de votre page sur <a href="https://findmyfbid.com/">ce site</a> puis cliquez sur “Find numeric ID”.</li>
-	<li>Ajoutez le token d’accès et votre ID de page dans le fichier like_counter.ino à la ligne <strong>25-26</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture7.png" alt="" class="wp-image-1885"/></figure></ol>
+	<li>Ajoutez le token d’accès et votre ID de page dans le fichier like_counter.ino à la ligne <strong>25-26</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture7.PNG" alt="" class="wp-image-1885"/></figure></ol>
 
 ### Instagram
 ***
 <ol><li>Afin de lier votre compte Instagram, commencez par vous identifier sur la plateforme dédiée <a href="https://www.instagram.com/developer/">ici</a>.</li>
 	<li>Cliquez sur "Manage Clients".</li>
-	<li>Puis remplissez les champs de la manière suivante.</li><figure class="wp-block-image"><img src="/Media/Capture10.png" alt="" class="wp-image-1889"></figure>
-	<li>Dans l'onglet "Security", décochez "Disable implicit OAuth". Puis cliquez sur "Register".</li><figure class="wp-block-image"><img src="/Media/Capture11.png" alt="" class="wp-image-1890"></figure>
-	<li>Une fois enregistré, vous devriez pouvoir voir votre application comme ceci, et trouver votre Client ID.</li><figure class="wp-block-image"><img src="/Media/Capture12.png" alt="" class="wp-image-1891"></figure>
+	<li>Puis remplissez les champs de la manière suivante.</li><figure class="wp-block-image"><img src="/Media/Capture10.PNG" alt="" class="wp-image-1889"></figure>
+	<li>Dans l'onglet "Security", décochez "Disable implicit OAuth". Puis cliquez sur "Register".</li><figure class="wp-block-image"><img src="/Media/Capture11.PNG" alt="" class="wp-image-1890"></figure>
+	<li>Une fois enregistré, vous devriez pouvoir voir votre application comme ceci, et trouver votre Client ID.</li><figure class="wp-block-image"><img src="/Media/Capture12.PNG" alt="" class="wp-image-1891"></figure>
 	<li>Copier / coller l’URL suivante en remplaçant “[CLIENT_ID]” par le votre dans un navigateur web : <br><blockquote class="wp-block-quote"><br><p><strong>https://instagram.com/oauth/authorize/?client_id=[CLIENT_ID]&amp;redirect_uri=http://localhost&amp;response_type=token</strong></p></blockquote></li>
 	<li>vous devriez récupérer une URL de ce type : http://localhost/#access_token=<strong>**********</strong> , avec votre access token à la fin.</li>
-	<li>Il ne vous restera plus qu’à l’ajouter dans le code, ligne <strong>29</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture13.png" alt="" class="wp-image-1892"></figure></ol>
+	<li>Il ne vous restera plus qu’à l’ajouter dans le code, ligne <strong>29</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture13.PNG" alt="" class="wp-image-1892"></figure></ol>
 
 ### Twitter
 ***
 <ol><li>Pour&nbsp;lier votre compte Twitter, rien de plus simple. Récupérez votre nom de page dans l’url. (ex: <a href="https://twitter.com/letmeknowfr?lang=fr">https://twitter.com/letmeknowfr?lang=fr</a>&nbsp;→ le nom de notre Twitter est "letmeknowfr")</li>
-	<li>Puis ajoutez le dans le programme du compteur ligne <strong>27</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture9.png" alt="" class="wp-image-1902"></figure></ol>
+	<li>Puis ajoutez le dans le programme du compteur ligne <strong>27</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture9.PNG" alt="" class="wp-image-1902"></figure></ol>
 
 ### Téléverser le code
 ***
 <ol><li>Afin de téléverser le code sur votre carte, commencez par sélectionner votre carte. Dans “Outils”&nbsp;→ “Type de carte”, sélectionner “WeMos D1 (Retired)” si vous utilisez le LinkNode D1. Puis paramétrer le de la manière suivante :</li><figure class="wp-block-image"><img src="/Media/Capture17.png" alt="" class="wp-image-1904"></figure>
-	<li>Sélectionnez le port COM sur lequel votre carte est connectée.</li><li>Et enfin, cliquez sur <strong>Téléverser</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture16.png" alt="" class="wp-image-1905"></figure></ol>
+	<li>Sélectionnez le port COM sur lequel votre carte est connectée.</li><li>Et enfin, cliquez sur <strong>Téléverser</strong>.</li><figure class="wp-block-image"><img src="/Media/Capture16.PNG" alt="" class="wp-image-1905"></figure></ol>
